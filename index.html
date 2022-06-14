@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/style.css">
-    <title>Landing Page</title>
+    <title>Dental Landing Page</title>
 </head>
 
 <body>
@@ -18,7 +18,7 @@
             <h1>Clean Dental <img id="dentalLogo" src="assets/images/tooth-5817901_640.png" alt="tooth"></h1>
             <!-- nav -->
             <nav>
-                <ul class="nav justify-content-end">
+                <ul id="navBar" class="nav justify-content-end">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Location</a>
                     </li>
@@ -32,48 +32,94 @@
             </nav>
         </header>
         <!-- hero -->
-        <div id="hero" class="container col-xxl-8 px-4 py-5 mw-100">
+        <section id="hero" class="container col-xxl-8 px-4 py-5 mw-100">
             <div id="heroRow" class="row flex-lg-row-reverse align-items-center g-5 py-5">
                 <div class="col-10 col-sm-8 col-lg-6">
-                    <img id="heroImg" src="assets/images/candid-WFsNCIn8OF4-unsplash.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes"
-                        width="700" height="500" loading="lazy">
+                    <img id="heroImg" src="assets/images/candid-WFsNCIn8OF4-unsplash.jpg"
+                        class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500"
+                        loading="lazy">
                 </div>
                 <div id="heroText" class="col-lg-6">
-                    <h2 class="display-5 fw-bold lh-1 mb-3 text-light">Sparkle up your life with a <br> quick and easy <br> dental consultation</h2>
-                    <p class="lead text-light">See why our office is rated #1 in the City of Riverside, with our trained professionals, <br> 
-                    communicating aches and pains will bring peace of mind with explanations and solutions.</p>
+                    <h2 class="display-5 fw-bold lh-1 mb-3 text-light">Sparkle up your life with a <br> quick and easy
+                        <br> dental consultation
+                    </h2>
+                    <p class="lead text-light">See why our office is rated #1 in the City of Riverside, with our trained
+                        professionals, <br>
+                        communicating aches and pains will bring peace of mind with explanations and solutions.</p>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                        <button id="btn" type="button" class="btn btn-light btn-lg px-4 me-md-2">Free consultation</button>
+                        <button id="btn" type="button" class="btn btn-light btn-lg px-4 me-md-2">Free
+                            consultation</button>
                     </div>
                 </div>
             </div>
-        </div>
-        <section>
-            <h3>Check out the services we provide</h3>
-            <img>
-            <p></p>
-            <img>
-            <p></p>
-            <img>
-            <p></p>
-            <img>
-            <p>
-            </p>
         </section>
-        <section>
-            <blockquote>“If you've put a smile on someone's face today, you've done more good than you know.”
-            </blockquote>
-            <p>- Richelle E. Goodrich.</p>
-        </section>
-        <section>
-            <div>
-                <p>Call us here at 999-999-9999 or sign up and book your consultation today!</p>
-                <p>for bookings please click on the sign up button right over there!</p>
-                <button>Sign up</button>
+        <!-- testimonials -->
+        <section class="testimonials-clean">
+            <div class="container">
+                <div class="intro">
+                    <h2 class="text-center">Testimonials</h2>
+                    <p class="text-center">Our customers love us! Read what they have to say below.</p>
+                </div>
+                <div class="row people">
+                    <div class="col-md-6 col-lg-4 item">
+                        <div class="box">
+                            <p class="description">Being a busy person coming to the dentist is a hassle, but having my
+                                pain alleviated with minimal discomfort after treatments was the best!</p>
+                        </div>
+                        <div class="author"><img class="rounded-circle" src=" ">
+                            <h5 class="name">Anthony Quinones</h5>
+                            <p class="title">Software Engineer Student @ UCR Extension BootCamp</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 item">
+                        <div class="box">
+                            <p class="description">I spend all nights coding and working on projects and holding the
+                                pain but after coming in the late night grinds have become even better!</p>
+                        </div>
+                        <div class="author"><img class="rounded-circle" src="">
+                            <h5 class="name">Christian Nathaniel Mcllvenny</h5>
+                            <p class="title">Software Engineer Student @ UCR Extension BootCamp</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 item">
+                        <div class="box">
+                            <p class="description">You know what they say, a bright smile is worth a million bucks, came
+                                in and now I cant stop smiling by how white my teeth are!</p>
+                        </div>
+                        <div class="author"><img class="rounded-circle" src=" ">
+                            <h5 class="name">Gilberto Escobedo</h5>
+                            <p class="title">Software Engineer Student @ UCR Extension BootCamp</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-        <footer>
-            <h4>Copyright © Clean Dental Mockup 2022</h4>
+        <!-- quote -->
+        <section>
+            <blockquote class="quote">“If you've put a smile on someone's face today, you've done more good than you
+                know.”
+            </blockquote>
+            <p class="quote">- Richelle E. Goodrich.</p>
+        </section>
+        <!-- footer -->
+        <footer class="footer-07">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-12 text-center">
+                        <p class="menu">
+                            <a href="#">Location</a>
+                            <a href="#">Services</a>
+                            <a href="#">Payment</a>
+                            <a href="#">Contact</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-md-12 text-center">
+                        <h4>Copyright © Clean Dental Mockup 2022</h4>
+                    </div>
+                </div>
+            </div>
         </footer>
     </main>
 </body>
