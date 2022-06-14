@@ -1,0 +1,120 @@
+:root {
+    --background-color: #1F2937;
+    --textcolor-dark: black;
+    --textcolor-light: white;
+    --button-background: #0cf;
+}
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    /* background-color: var(--background-color); */
+}
+
+header {
+    padding: 20px 275px 20px 275px;
+    display: flex;
+    background-color: var(--background-color);
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    color: var(--textcolor-light);
+    position: relative;
+}
+
+header #dentalLogo {
+    width: 35px;
+    height: 35px;
+    position: relative;
+    top: -5px;
+    left: -3px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-size: 27px;
+}
+
+.nav-link {
+    color: var(--textcolor-light);
+}
+
+#hero {
+    background-color: var(--background-color);
+    width: 100%;
+}
+
+#heroText {
+    padding: 100px;
+}
+
+#heroImg {
+    border-radius: 10px;
+    width: 35vw;
+}
+
+
+#btn,
+#btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 100px;
+    transition: all .2s;
+}
+
+#btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+#btn-white {
+    background-color: #fff;
+    color: #777;
+}
+
+#btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+#btn-white::after {
+    background-color: #fff;
+}
+
+#btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+#btn-animated {
+    animation: moveInBottom 5s ease-out;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+}
